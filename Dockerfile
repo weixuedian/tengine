@@ -77,7 +77,7 @@ RUN chown -R root:root /opt/nginx \
 	&& mkdir -p /opt/inc_target
 	
 # cp resource
-COPY mime.types /opt/nginx/
+COPY /conf/mime.types /opt/nginx/
 COPY entry.sh /opt/
 COPY /conf/inotify-tools-3.14-8.el7.x86_64.rpm /opt/
 COPY nginx-log-rotate.sh /opt/
