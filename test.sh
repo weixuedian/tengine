@@ -2,7 +2,7 @@
 docker rm -f tengine-test
 
 docker build -t "docker-registry.hexun.com/hexunzq/tengine:v2.4.0" .
-
+docker push  "registry.cn-beijing.aliyuncs.com/tigers"
 
 #
 ##!/usr/bin/env bash
